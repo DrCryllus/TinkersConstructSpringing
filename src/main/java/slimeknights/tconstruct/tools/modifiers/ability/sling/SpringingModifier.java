@@ -33,7 +33,7 @@ public class SpringingModifier extends SlingModifier {
     if (entity instanceof Player player && !player.isFallFlying()) {
       player.causeFoodExhaustion(0.2F);
 
-      float f = getForce(tool, modifier, player, timeLeft, true) * 1.05f;
+      float f = getForce(tool, modifier, player, timeLeft, true) * 2f;
       if (f > 0) {
         Vec3 look = player.getLookAngle().add(0, 1, 0).normalize();
         float inaccuracy = ModifierUtil.getInaccuracy(tool, player) * 0.0075f;
